@@ -296,11 +296,14 @@ ol {
   .add-card__field-submit:hover {
     opacity: 1; }
 
-.add-card__field-submit_load {
+.form_load .add-card__field-submit {
   opacity: 0.5; }
-  .add-card__field-submit_load:hover {
+  .form_load .add-card__field-submit:hover {
     opacity: 0.5;
     cursor: default; }
+
+.form_load .ajax-loader {
+  opacity: 1; }
 
 .add-card__form-desc {
   margin: 19px 0 26px 0;
@@ -321,5 +324,22 @@ ol {
   @media only screen and (max-width: 568px) {
     .invalid-field-message {
       padding: 6px 0 0 0; } }
+
+.add-card__wrap-submit-field {
+  position: relative; }
+
+.ajax-loader {
+  content: url(../img/ajax-loader.gif);
+  display: block;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  top: 50%;
+  left: calc( 100% + 5px);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
 
 /*# sourceMappingURL=app.css.map */
