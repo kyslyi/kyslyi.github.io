@@ -90,14 +90,6 @@ ul {
 ol {
   list-style: decimal; }
 
-.icon {
-  display: inline-block;
-  font-style: normal;
-  content: ' '; }
-
-.ico {
-  fill: currentColor; }
-
 .header {
   padding: 38px 0;
   background: -webkit-gradient(linear, left top, right top, color-stop(0.26%, #5A4BE6), color-stop(47.1%, #73AFF7), color-stop(99.8%, #93D0D9));
