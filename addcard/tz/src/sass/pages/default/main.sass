@@ -1,0 +1,130 @@
+.add-card
+    padding-top: 80px
+    padding-bottom: 80px
+    +r($mobile)
+        padding-top: 20px
+        padding-bottom: 20px
+.section-title
+    font-family: CoreSansG;
+    font-size: 32px;
+    line-height: 34px;
+    font-weight: 400
+    text-align: center;
+    color: #000000;
+    +r($mobile)
+        font-size: 26px
+        line-height: 26px
+.add-card__form
+    padding: 48px 0
+    margin-top: 28px
+    border: 1px solid #E4E4E4;
+    border-radius: 4px;
+    +r($tablet)
+        padding: 16px
+.add-card__inner-form
+    max-width: 404px
+    width: 100%
+    margin-left: auto
+    margin-right: auto
+.add-card__field-card
+    background-repeat: no-repeat
+    background-position: center right 12px
+.add-card__wrap-fields
+    display: flex
+    justify-content: space-between
+    margin-top: 16px
+    position: relative
+    .add-card__wrap-field
+        width: calc( 50% - 8px )
+        +r($mobile)
+            width: calc( 50% - 4px )
+.add-card__title-field
+    font-family: CoreSansG;
+    font-size: 18px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 14px
+    +r($mobile)
+        display: none
+.add-card__field
+    border-radius: 4px;
+    width: 100%
+    height: 56px
+
+    font-family: CoreSansG;
+    font-size: 16px;
+    line-height: 17px;
+    color: #000000;
+    &:not(.add-card__field-submit)
+        border: 1px solid #CCCCCC;
+        padding-left: 16px
+    &::-webkit-input-placeholder
+        font-family: CoreSansG;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 17px;
+        color: #808080;
+    &::-moz-placeholder
+        font-family: CoreSansG;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 17px;
+        color: #808080;
+    &:-ms-input-placeholder
+        font-family: CoreSansG;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 17px;
+        color: #808080;
+.add-card__field_invalid
+    border-color: #FF8D8D !important
+.add-card__field-submit
+    background: linear-gradient(122.5deg, #5A4BE6 -33.07%, #73AFF7 48.35%, #93D0D9 139.94%);
+    border-radius: 4px;
+    border: none
+    font-family: CoreSansG;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer
+    opacity: 0.8
+    transition: 0.3s
+    &:hover
+        opacity: 1
+.form_load
+    .add-card__field-submit
+        opacity: 0.5
+        &:hover
+            opacity: 0.5
+            cursor: default
+    .ajax-loader
+        opacity: 1
+.add-card__form-desc
+    margin: 19px 0 26px 0
+    font-family: CoreSansG;
+    font-size: 16px;
+    line-height: 20px;
+    color: #808080;
+.invalid-field-message
+    display: block
+    padding-top: 6px
+    padding-left: 20px
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #FF8D8D;
+    +r($mobile)
+        padding: 6px 0 0 0
+.add-card__wrap-submit-field
+    position: relative
+.ajax-loader
+    content: url(../img/ajax-loader.gif)
+    display: block
+    opacity: 0
+    transition: 0.3s
+    position: absolute
+    top: 50%
+    left: calc( 100% + 5px )
+    transform: translateY(-50%)

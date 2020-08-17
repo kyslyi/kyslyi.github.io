@@ -1,0 +1,28 @@
+extends shared/_layout
+
+block vars
+  - var title = 'Главная'
+  - var bodyClass = ''
+
+block content
+
+  section.add-card
+    .container
+      h2.section-title Добавление платежной&nbsp;карты
+      form.add-card__form
+        .add-card__inner-form
+          h3.add-card__title-field Номер карты
+          .add-card__wrap-field
+            input(type="text" placeholder="Номер карты" data-img-visa="./img/visa.jpg" data-img-master-card="./img/mastedCard.png").add-card__field.add-card__field-card
+            span.invalid-field-message
+          .add-card__wrap-fields
+            .add-card__wrap-field
+              input(type="text" placeholder="Срок действия").add-card__field.add-card__field-validity
+              span.invalid-field-message
+            .add-card__wrap-field
+              input(type="password" placeholder="CVС код").add-card__field.add-card__field-cvc-code
+              span.invalid-field-message
+          p.add-card__form-desc Для привязки карты мы проведем платеж в размере&nbsp;1.00 UAH, который будет возвращен в течение 30 минут
+          .add-card__wrap-field.add-card__wrap-submit-field
+            input(type="submit" value="Получить деньги").add-card__field.add-card__field-submit
+            span.ajax-loader

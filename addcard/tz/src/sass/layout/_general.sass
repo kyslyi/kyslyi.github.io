@@ -1,0 +1,59 @@
+*
+    box-sizing: border-box
+    outline: none
+
+body, html
+    background: white
+    color: $fontColor
+    font-family: $font-family
+    font-size: 16px
+    min-width: 320px
+    max-width: 100%
+    margin: 0
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+.page-container
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+    overflow: hidden
+.container
+    max-width: 990px
+    width: 100%
+    margin-left: auto
+    margin-right: auto
+    padding-left: 15px
+    padding-right: 15px
+    +r($wide)
+        max-width: 960px
+        padding-left: 15px
+        padding-right: 15px
+    +r($desktop)
+        max-width: 720px 
+    +r($tablet)
+        max-width: 540px
+    +r($mobile)
+        max-width: 100%
+h1,h2,h3,h4,h5,h6,p,a,span,ul,ol,li
+    padding: 0
+    margin: 0
+a
+    color: $fontColor
+    text-decoration: none
+    font-family: $font-family
+    font-size: 18px
+    font-weight: 400
+    &:hover, &:focus
+        text-decoration: none
+button
+    padding: 0
+    border: 0
+    box-shadow: none
+    background: none
+    cursor: pointer
+    &:focus
+        outline: none
+ul
+    list-style: none
+ol
+    list-style: decimal

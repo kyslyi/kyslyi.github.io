@@ -1,0 +1,52 @@
+.header
+    padding: 38px 0
+    background: linear-gradient(90deg, #5A4BE6 0.26%, #73AFF7 47.1%, #93D0D9 99.8%)
+    +r($mobile)
+        padding: 22px 0
+.header__container
+    display: flex
+    justify-content: center
+    position: relative
+    +r($mobile)
+        justify-content: space-between
+.header__logo
+    max-width: 160px
+    width: 100%
+    display: block
+    +r($mobile)
+        max-width: 123px
+.header__lan
+    position: absolute
+    top: 50%
+    right: 0
+    transform: translateY(-50%)
+    display: flex
+    align-items: center
+    +r($mobile)
+        position: static
+        transform: none
+.header__lan-item
+    font-family: Roboto
+    font-weight: normal
+    font-size: 16px
+    letter-spacing: -0.2px
+    color: #fff
+    transition: 0.3s
+    &:hover
+        opacity: 0.7
+    &:last-child
+        display: flex
+        align-items: center
+        margin-left: 8px
+        &::before    
+            content: '|'
+            display: block
+            font-family: inherit
+            font-weight: inherit
+            font-size: inherit
+            letter-spacing: inherit
+            color: inherit
+            margin-right: 10px
+.header__lan-item_active
+    color: #587BC3;
+    
