@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Movement Features</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <!-- remove for production-->
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" media="all" href="css/libs.css">
+    <link rel="stylesheet" media="all" href="css/app.css"><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="start page-container__frame">
+        <button class="start__btn js-start-game">Начать игру</button>
+      </div>
+      <div class="game page-container__frame">
+        <p class="game__timer"><span class="game__timer-l">01</span>:<span class="game__timer-r">00</span></p>
+        <div class="game__birds">
+          <div class="game__wrap-bird"><img class="game__bird" src="./img/eagle.svg" alt=""></div>
+          <div class="game__wrap-bird"><img class="game__bird" src="./img/eagle.svg" alt=""></div>
+          <div class="game__wrap-bird"><img class="game__bird" src="./img/eagle.svg" alt=""></div>
+          <div class="game__wrap-bird game__wrap-bird"><img class="game__bird game__main-bird game__main-bird_current" src="./img/eagle.svg" alt=""></div>
+          <div class="game__wrap-bird"><img class="game__bird" src="./img/eagle.svg" alt=""></div>
+          <div class="game__wrap-bird"><img class="game__bird" src="./img/eagle.svg" alt=""></div>
+          <div class="game__wrap-bird"><img class="game__bird" src="./img/eagle.svg" alt=""></div>
+        </div>
+        <div class="control">
+          <div class="control__item control__left" data-direction="left">
+            <svg class="ico arrow">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </div>
+          <div class="control__inner">
+            <div class="control__item control__top" data-direction="top">
+              <svg class="ico arrow">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="control__item control__bottom" data-direction="bottom">
+              <svg class="ico arrow">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="control__item control__right" data-direction="right">
+            <svg class="ico arrow">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="game__countdown">3</div>
+      </div>
+      <div class="finish page-container__frame">
+        <h2 class="finish__title">Игра закончена</h2>
+        <ul class="finish__list">
+          <li class="finish__item finish__item_total"><span class="finish__item_l">Общее</span>: <span class="finish__item_r"></span></li>
+          <li class="finish__item finish__item_valid"><span class="finish__item_l">Правильно</span>: <span class="finish__item_r"></span></li>
+          <li class="finish__item finish__item_invalid"><span class="finish__item_l">Неправильно</span>: <span class="finish__item_r"></span></li>
+          <li class="finish__item finish__item_speed"><span class="finish__item_l">Средняя скорость выборов</span>: <span class="finish__item_r"></span></li>
+          <li class="finish__item finish__item_percent"><span class="finish__item_l">Процент правильных</span>: <span class="finish__item_r"></span></li>
+        </ul>
+        <button class="finish__btn js-start-game">Играть заново</button>
+      </div>
+    </div>
+    <script src="js/libs.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
